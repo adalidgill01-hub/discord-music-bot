@@ -18,7 +18,7 @@ client.once("ready", () => {
 client.on("messageCreate", async (message) => {
   if (message.author.bot) return;
 
-  if (!message.content.startsWith("!play ")) return;
+ if (!message.content.startsWith("?play ")) return; 
 
   const url = message.content.split(" ")[1];
 
